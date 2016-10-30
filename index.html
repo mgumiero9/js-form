@@ -1,12 +1,69 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
+    <script src="checkit.js"> </script>
+
 </head>
+
 <body>
-
-
+    <form name="example" action="#" onsubmit="checkit(); return false">
+        <table class="form">
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input name="name" /> </td>
+            </tr>
+            <tr>
+                <td>Why do you want to learn JavaScript?</td>
+                <td>
+                    <input type="radio" name="why" value="Dunno" />Dunno
+                    <br />
+                    <input type="radio" name="why" value="Boss" />Because my boss told me to
+                    <br />
+                    <input type="radio" name="why" value="Interest" />Generally interested
+                    <br />
+                    <input type="radio" name="why" value="Useful" />It might come in useful </td>
+            </tr>
+            <tr>
+                <td>Favorite Color</td>
+                <td>
+                    <select name="colors">
+                        <option value='' selected="selected">--- Select ---</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies?</td>
+                <td>
+                    <input type="checkbox" name="biking" />biking
+                    <br />
+                    <input type="checkbox" name="skying" />skying
+                    <br />
+                    <input type="checkbox" name="driving" />driving
+                    <br />
+                    <input type="checkbox" name="swimming" />swimming</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit form" />
+                    <br />
+                    <input type="reset" /> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea cols="30" rows="7" name="output">When you hit 'Submit' the user input will be written to this textarea</textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
 
 </body>
+
 </html>
